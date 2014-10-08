@@ -9,6 +9,7 @@
 #import "TOB_OuterSpaceTableViewController.h"
 
 @interface TOB_OuterSpaceTableViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *cellDayLabel;
 
 @end
 
@@ -17,12 +18,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView registerClass: [UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+//    Get font names:
+//    for (NSString* family in [UIFont familyNames])
+//    {
+//        NSLog(@"%@", family);
+//        
+//        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+//        {
+//            NSLog(@"  %@", name);
+//        }
+//    }
+   
+//    Montserrat
+//    Montserrat-Bold
+//    Montserrat-Regular
+  
+//    Implementing:
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
+//    label.textAlignment = NSTextAlignmentCenter;
+//    label.text = @"Using Custom Fonts";
+//    label.font = [UIFont fontWithName:@"Montserrat-Regular" size:20];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -46,15 +74,15 @@
 
 
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    cell.textLabel.text = @"Hallo Schnuffi";
+    cell.textLabel.font = [UIFont fontWithName:@"Montserrat-Regular" size:20];
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
