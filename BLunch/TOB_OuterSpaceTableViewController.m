@@ -9,7 +9,7 @@
 #import "TOB_OuterSpaceTableViewController.h"
 
 @interface TOB_OuterSpaceTableViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *cellDayLabel;
+
 
 @end
 

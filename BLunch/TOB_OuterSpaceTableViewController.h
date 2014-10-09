@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomCell.h"
 
 @interface TOB_OuterSpaceTableViewController : UITableViewController
-
+@property (assign, nonatomic) IBOutlet CustomCell *customCell;
 @end

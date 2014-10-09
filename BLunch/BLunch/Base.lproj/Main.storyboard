@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="02c-WS-XQh">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6245"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -16,6 +17,7 @@
             <objects>
                 <tableViewController id="37c-fC-ztq" customClass="TOB_OuterSpaceTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ymp-yz-Xpg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -61,7 +63,8 @@
                                                     <exclude reference="3Qr-9r-aPs"/>
                                                 </mask>
                                             </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="108" y="0.0" width="264" height="70"/>
                                                 <mask key="constraints">
                                                     <exclude reference="3Qr-9r-aPs"/>
                                                 </mask>
@@ -130,11 +133,12 @@
                                             <exclude reference="J36-6u-rPi"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="3sO-Ur-9aW"/>
-                                            <exclude reference="D5h-ra-EzO"/>
-                                            <exclude reference="Yxh-L5-koG"/>
-                                            <exclude reference="iIE-5v-iZa"/>
-                                            <exclude reference="iuy-11-81I"/>
+                                            <exclude reference="Cma-HT-QIV"/>
+                                            <exclude reference="Pev-DD-Mz2"/>
+                                            <exclude reference="bb4-Co-5As"/>
+                                            <exclude reference="idn-Cr-BzG"/>
+                                            <exclude reference="xcs-9p-GqZ"/>
+                                            <exclude reference="zaj-MV-fkK"/>
                                             <exclude reference="3bN-TB-6gX"/>
                                             <exclude reference="97Z-7M-Y9P"/>
                                             <exclude reference="O6x-xZ-IrR"/>
@@ -146,12 +150,11 @@
                                             <exclude reference="mHm-SG-X3o"/>
                                             <exclude reference="s6b-ha-ilr"/>
                                             <exclude reference="ztc-Vg-MZG"/>
-                                            <exclude reference="Cma-HT-QIV"/>
-                                            <exclude reference="Pev-DD-Mz2"/>
-                                            <exclude reference="bb4-Co-5As"/>
-                                            <exclude reference="idn-Cr-BzG"/>
-                                            <exclude reference="xcs-9p-GqZ"/>
-                                            <exclude reference="zaj-MV-fkK"/>
+                                            <exclude reference="3sO-Ur-9aW"/>
+                                            <exclude reference="D5h-ra-EzO"/>
+                                            <exclude reference="Yxh-L5-koG"/>
+                                            <exclude reference="iIE-5v-iZa"/>
+                                            <exclude reference="iuy-11-81I"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -161,11 +164,12 @@
                                             <include reference="J36-6u-rPi"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="3sO-Ur-9aW"/>
-                                            <include reference="D5h-ra-EzO"/>
-                                            <include reference="Yxh-L5-koG"/>
-                                            <exclude reference="iIE-5v-iZa"/>
-                                            <exclude reference="iuy-11-81I"/>
+                                            <exclude reference="Cma-HT-QIV"/>
+                                            <exclude reference="Pev-DD-Mz2"/>
+                                            <include reference="bb4-Co-5As"/>
+                                            <include reference="idn-Cr-BzG"/>
+                                            <include reference="xcs-9p-GqZ"/>
+                                            <exclude reference="zaj-MV-fkK"/>
                                             <exclude reference="3bN-TB-6gX"/>
                                             <exclude reference="97Z-7M-Y9P"/>
                                             <include reference="O6x-xZ-IrR"/>
@@ -177,12 +181,11 @@
                                             <exclude reference="mHm-SG-X3o"/>
                                             <include reference="s6b-ha-ilr"/>
                                             <exclude reference="ztc-Vg-MZG"/>
-                                            <exclude reference="Cma-HT-QIV"/>
-                                            <exclude reference="Pev-DD-Mz2"/>
-                                            <include reference="bb4-Co-5As"/>
-                                            <include reference="idn-Cr-BzG"/>
-                                            <include reference="xcs-9p-GqZ"/>
-                                            <exclude reference="zaj-MV-fkK"/>
+                                            <exclude reference="3sO-Ur-9aW"/>
+                                            <include reference="D5h-ra-EzO"/>
+                                            <include reference="Yxh-L5-koG"/>
+                                            <exclude reference="iIE-5v-iZa"/>
+                                            <exclude reference="iuy-11-81I"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -194,9 +197,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your previous blunches" id="Qm1-j1-UtC"/>
-                    <connections>
-                        <outlet property="cellDayLabel" destination="Kjj-h0-wa1" id="mAr-0D-M27"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vnu-5O-AH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

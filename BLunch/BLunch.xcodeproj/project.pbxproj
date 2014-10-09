@@ -16,6 +16,8 @@
 		ABD8350219E46FF800509FE3 /* TOB_OuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8350119E46FF800509FE3 /* TOB_OuterSpaceTableViewController.m */; };
 		ABD8350719E52D8200509FE3 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD8350519E52D8200509FE3 /* Montserrat-Bold.ttf */; };
 		ABD8350819E52D8300509FE3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABD8350619E52D8200509FE3 /* Montserrat-Regular.ttf */; };
+		ABD8350D19E6B6D500509FE3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD8350C19E6B6D500509FE3 /* CustomCell.xib */; };
+		ABD8351019E6B81800509FE3 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD8350F19E6B81800509FE3 /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		ABD8350119E46FF800509FE3 /* TOB_OuterSpaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TOB_OuterSpaceTableViewController.m; path = ../TOB_OuterSpaceTableViewController.m; sourceTree = "<group>"; };
 		ABD8350519E52D8200509FE3 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		ABD8350619E52D8200509FE3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		ABD8350C19E6B6D500509FE3 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		ABD8350E19E6B81800509FE3 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		ABD8350F19E6B81800509FE3 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				AB3AD06419E176810037C34A /* AppDelegate.h */,
 				AB3AD06519E176810037C34A /* AppDelegate.m */,
 				AB3AD06A19E176810037C34A /* Main.storyboard */,
+				ABD8350C19E6B6D500509FE3 /* CustomCell.xib */,
+				ABD8350E19E6B81800509FE3 /* CustomCell.h */,
+				ABD8350F19E6B81800509FE3 /* CustomCell.m */,
 				ABD8350019E46FF800509FE3 /* TOB_OuterSpaceTableViewController.h */,
 				ABD8350119E46FF800509FE3 /* TOB_OuterSpaceTableViewController.m */,
 				AB3AD06D19E176810037C34A /* Images.xcassets */,
@@ -221,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD8350D19E6B6D500509FE3 /* CustomCell.xib in Resources */,
 				ABD8350719E52D8200509FE3 /* Montserrat-Bold.ttf in Resources */,
 				AB3AD06C19E176810037C34A /* Main.storyboard in Resources */,
 				AB3AD07119E176810037C34A /* LaunchScreen.xib in Resources */,
@@ -245,6 +254,7 @@
 			files = (
 				ABD8350219E46FF800509FE3 /* TOB_OuterSpaceTableViewController.m in Sources */,
 				AB3AD06619E176810037C34A /* AppDelegate.m in Sources */,
+				ABD8351019E6B81800509FE3 /* CustomCell.m in Sources */,
 				AB3AD06319E176810037C34A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
